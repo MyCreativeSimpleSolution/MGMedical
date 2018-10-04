@@ -1,7 +1,12 @@
 @import 'variables';
 
 .sidebar {
+  position: relative;
   padding: 2rem;
+  height: 100%;
+  z-index: 1;
+  box-shadow: 0 0 8px 4px $color-white;
+
   &-header {
     display: flex;
     align-items: center;

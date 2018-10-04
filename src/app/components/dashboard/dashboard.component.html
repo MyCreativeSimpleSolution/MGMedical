@@ -1,4 +1,28 @@
-<p>
-  dashboard works!
-</p>
-<app-card></app-card>
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <div class="select-specialisation">
+      <h3>
+        <span>Specialist Jantung</span>
+        <i [inlineSVG]="'assets/svg/select.svg'"></i>
+      </h3>
+      <span>Show 12/20</span>
+    </div>
+    <div class="pagination">
+      <button class="active">Preview</button>
+      <button>Next</button>
+    </div>
+    <div class="view-selector">
+      <span>View</span>
+      <button class="active"><i [inlineSVG]="'assets/svg/grid.svg'"></i></button>
+      <button><i [inlineSVG]="'assets/svg/details.svg'"></i></button>
+    </div>
+  </div>
+  <div class="dashboard-content">
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+  </div>
+</div>

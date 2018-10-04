@@ -1,3 +1,35 @@
-<p>
-  header works!
-</p>
+<header class="header">
+  <div class="input-search">
+    <i [inlineSVG]="'assets/svg/search.svg'"></i>
+    <input type="search" placeholder="Search...">
+  </div>
+  <div class="header-user">
+    <!--TODO: ADD INITIALS IF NO AVATAR-->
+    <img class="user-avatar" src="assets/images/user-avatar.png" alt="user avatar">
+    <span class="user-welcome">Hello, {{name}}</span>
+    <div class="user-notifications">
+      <i [inlineSVG]="'assets/svg/notifications.svg'"></i>
+      <span>3</span>
+    </div>
+  </div>
+  <div class="header-menu">
+    <i class="header-menu__toggle"
+       (click)="toggleMenu()"
+       [inlineSVG]="'assets/svg/menu.svg'"></i>
+    <div class="header-menu__items"
+    [class.open]="openMenu">
+      <div class="menu-item">
+        <span>Setting</span>
+        <i [inlineSVG]="'assets/svg/settings.svg'"></i>
+      </div>
+      <div class="menu-item">
+        <span>Balance</span>
+        <i [inlineSVG]="'assets/svg/balance.svg'"></i>
+      </div>
+      <div class="menu-item">
+        <span>Sign out</span>
+        <i [inlineSVG]="'assets/svg/signout.svg'"></i>
+      </div>
+    </div>
+  </div>
+</header>

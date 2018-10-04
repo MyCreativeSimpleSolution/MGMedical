@@ -1,8 +1,12 @@
 
 .app {
   display: flex;
+  height: 100vh;
   app-sidebar {
     width: 15vw;
     min-width: 290px;
+  }
+  &-container {
+    width: 100%;
   }
 }

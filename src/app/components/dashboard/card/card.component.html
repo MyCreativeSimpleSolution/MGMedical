@@ -1,3 +1,18 @@
-<p>
-  card works!
-</p>
+<div class="card">
+  <div class="card__body">
+    <img class="card__avatar" src="assets/images/user-avatar.png" alt="Avatar">
+    <h3 class="card__name">Dr. Manan Bondu</h3>
+    <span class="card__specialisation">Specialist Jantung</span>
+    <div class="card__ratings">
+      <i [inlineSVG]="'assets/svg/star.svg'"></i>
+      <i [inlineSVG]="'assets/svg/star.svg'"></i>
+      <i [inlineSVG]="'assets/svg/star.svg'"></i>
+      <i [inlineSVG]="'assets/svg/star.svg'"></i>
+      <i [inlineSVG]="'assets/svg/star.svg'"></i>
+    </div>
+  </div>
+  <div class="card__actions">
+    <span class="message"><i [inlineSVG]="'assets/svg/mail.svg'"></i>message</span>
+    <span class="profile"><i [inlineSVG]="'assets/svg/user.svg'"></i>profile</span>
+  </div>
+</div>

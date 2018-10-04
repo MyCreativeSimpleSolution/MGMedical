@@ -1,0 +1,47 @@
+@import "variables";
+
+.dashboard-container {
+  height: calc(100vh - #{$size-menu});
+  padding: 2rem 4rem;
+  background-color: $color-white;
+
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-grey;
+  }
+  .select-specialisation {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      display: flex;
+      margin: 0;
+    }
+    span {
+      flex: 1;
+    }
+  }
+  .pagination {
+    button {
+      color: inherit;
+    }
+  }
+  .view-selector {
+    span {
+      margin-right: 1rem;
+    }
+    button {
+      color: $color-grey;
+    }
+  }
+
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
